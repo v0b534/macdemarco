@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac DeMarco</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <img class="rabbit" src="images/bunny.jpg" alt="un conejo">
+
+  <div class="page">
+
+    <header class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">músico / compositor / productor</p>
+        <h1>Mac<br>DeMarco</h1>
+        <p class="subtitle">el slacker más querido del indie rock</p>
+      </div>
+    </header>
+
+    <div class="mac-photo-wrapper">
+      <img class="mac-photo" src="images/macdemarco.jpg" alt="Mac DeMarco">
+      <p class="photo-caption">Mac DeMarco</p>
+    </div>
+
+    <nav>
+      <button class="nav-btn active" onclick="show('bio', this)">Bio</button>
+      <button class="nav-btn" onclick="show('disco', this)">Discografía</button>
+      <button class="nav-btn" onclick="show('trivia', this)">Curiosidades</button>
+    </nav>
+
+    <section id="bio" class="section visible">
+      <p class="section-label">sobre él</p>
+
+      <div class="bio-grid">
+        <div class="bio-cell">
+          <span class="cell-label">nombre real</span>
+          <span class="cell-value">Vernor Winfield McBriare Smith IV</span>
+        </div>
+        <div class="bio-cell">
+          <span class="cell-label">nacimiento</span>
+          <span class="cell-value">30 de abril, 1990</span>
+        </div>
+        <div class="bio-cell">
+          <span class="cell-label">origen</span>
+          <span class="cell-value">Duncan, BC, Canadá</span>
+        </div>
+        <div class="bio-cell">
+          <span class="cell-label">géneros</span>
+          <span class="cell-value">Indie rock, jangle pop, lo-fi, slacker rock</span>
+        </div>
+      </div>
+
+      <p class="bio-text">
+        Mac DeMarco es un músico y productor canadiense conocido por su sonido lo-fi relajado, sus guitarras jangle y su personalidad excéntrica. Creció moviéndose entre distintas ciudades canadienses y aprendió música de forma autodidacta. Comenzó su carrera bajo el alias Makeout Videotape antes de lanzarse como solista en 2012.
+        <br><br>
+        Su estética mezcla la pereza del slacker rock de los 90s con melodías melancólicas y letras sobre amor, amigos y la vida cotidiana. Es famoso por grabar sus discos en casa, muchas veces en su dormitorio, con equipos mínimos.
+      </p>
+
+      <blockquote>
+        "Solo quiero que la gente se relaje y disfrute."
+        <cite>— Mac DeMarco</cite>
+      </blockquote>
+    </section>
+
+    <section id="disco" class="section">
+      <p class="section-label">álbumes de estudio — hacé click para escuchar en YouTube Music</p>
+
+      <div class="album-grid">
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_mDMsRywdfmO4mqOL9QWgQF7oIrNUc8bNc" target="_blank">
+          <img class="album-art-img" src="images/Mac demarco - Rock and Roll night club.jpg" alt="Rock and Roll Night Club">
+          <div class="album-info">
+            <p class="album-title">Rock and Roll Night Club</p>
+            <p class="album-year">2012</p>
+          </div>
+        </a>
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_n7_57cKb0-lBkUueFUyJH-ZXOMYhN5WOI" target="_blank">
+          <img class="album-art-img" src="images/2.jpg" alt="2">
+          <div class="album-info">
+            <p class="album-title">2</p>
+            <p class="album-year">2012</p>
+          </div>
+        </a>
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_m-gO_Tg8nscLdoNdXORCpV4gHstHJ9J04" target="_blank">
+          <img class="album-art-img" src="images/Salad Days.jpg" alt="Salad Days">
+          <div class="album-info">
+            <p class="album-title">Salad Days</p>
+            <p class="album-year">2014</p>
+          </div>
+        </a>
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_k82e8x-FGt_OoWds9p8KFU9hSYZUbRRCs" target="_blank">
+          <img class="album-art-img" src="images/Mac Demarco - Another One - Music & Performance - CD - Walmart_com.jpg" alt="Another One">
+          <div class="album-info">
+            <p class="album-title">Another One</p>
+            <p class="album-year">2015</p>
+          </div>
+        </a>
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_luR5a94YiiA7JvTfm6JnfJVfnxmgOxJ5g" target="_blank">
+          <img class="album-art-img" src="images/Mac DeMarco 'This Old Dog' Album Canvas Print.jpg" alt="This Old Dog">
+          <div class="album-info">
+            <p class="album-title">This Old Dog</p>
+            <p class="album-year">2017</p>
+          </div>
+        </a>
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_n3VFPdJjMWd0W5VR4-vjm8yCYvQSpQFQE" target="_blank">
+          <img class="album-art-img" src="images/Here comes the cowboy.jpg" alt="Here Comes the Cowboy">
+          <div class="album-info">
+            <p class="album-title">Here Comes the Cowboy</p>
+            <p class="album-year">2019</p>
+          </div>
+        </a>
+        <a class="album-card" href="https://music.youtube.com/playlist?list=OLAK5uy_lSqv2yhqIOrtZMKue1EhMG3HLwP1I2_oU" target="_blank">
+          <img class="album-art-img" src="images/Mac Demarco “Five Easy Hot Dogs” 2023.jpg" alt="Five Easy Hot Dogs">
+          <div class="album-info">
+            <p class="album-title">Five Easy Hot Dogs</p>
+            <p class="album-year">2023</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="trivia" class="section">
+      <p class="section-label">datos curiosos</p>
+
+      <ul class="facts-list">
+        <li><span class="num">01</span> Su nombre completo es Vernor Winfield McBriare Smith IV.</li>
+        <li><span class="num">02</span> Graba casi toda su música en casa con equipos básicos. Su sonido lo-fi es intencional.</li>
+        <li><span class="num">03</span> Es famoso por poner su dirección real en los discos, invitando a fans a visitarlo — y muchos aparecieron.</li>
+        <li><span class="num">04</span> Tiene una colección de guitarras Jazzmaster de Fender, el instrumento central de su sonido.</li>
+        <li><span class="num">05</span> Comenzó bajo el nombre Makeout Videotape antes de ser Mac DeMarco.</li>
+        <li><span class="num">06</span> Es conocido por sus travesuras en el escenario, incluyendo desnudarse y hacer actos absurdos.</li>
+        <li><span class="num">07</span> Ha sido mencionado como influencia por artistas como Kevin Morby y Mild High Club.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <div class="player-wrapper">
+    <div class="player">
+      <p class="player-label">escuchá</p>
+      <div class="player-inner">
+        <div class="player-info">
+          <span class="player-title" id="song-title">Chamber of Reflection</span>
+          <span class="player-artist">Mac DeMarco</span>
+        </div>
+        <div class="player-controls">
+          <button onclick="prevSong()">&#9664;&#9664;</button>
+          <button onclick="togglePlay()" id="play-btn">&#9654;</button>
+          <button onclick="nextSong()">&#9654;&#9654;</button>
+        </div>
+        <div class="player-progress">
+          <span id="current-time">0:00</span>
+          <input type="range" id="progress" value="0" min="0" max="100" oninput="seek(this.value)">
+          <span id="duration">0:00</span>
+        </div>
+        <audio id="audio"></audio>
+      </div>
+      <ul class="playlist">
+        <li class="active" onclick="loadSong(0, this)">Chamber of Reflection</li>
+        <li onclick="loadSong(1, this)">Salad Days</li>
+        <li onclick="loadSong(2, this)">My Kind of Woman</li>
+        <li onclick="loadSong(3, this)">Ode to Viceroy</li>
+        <li onclick="loadSong(4, this)">20190724</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

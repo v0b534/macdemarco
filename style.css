@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Mono', monospace;
+  background: #f0ebe0;
+  color: #2a2018;
+  padding: 2rem 1rem 0;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+}
+
+/* conejo escondido */
+.rabbit {
+  position: fixed;
+  bottom: -55px;
+  right: 12px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: opacity 0.4s, bottom 0.4s;
+  z-index: 100;
+  cursor: pointer;
+  filter: sepia(0.2);
+}
+
+.rabbit:hover {
+  opacity: 1;
+  bottom: 12px;
+}
+
+/* hero */
+.hero {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #c8b89a;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #8a7055;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-family: 'Special Elite', serif;
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 400;
+  color: #1a1008;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #7a6248;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* foto de mac */
+.mac-photo-wrapper {
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #c8b89a;
+}
+
+.mac-photo {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.photo-caption {
+  font-size: 11px;
+  color: #8a7055;
+  font-style: italic;
+  padding: 0.5rem 0.75rem;
+  background: #e8e0d0;
+  border-top: 1px solid #c8b89a;
+}
+
+/* nav */
+nav {
+  display: flex;
+  border-bottom: 1px solid #c8b89a;
+  margin-bottom: 2rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.75rem 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a7055;
+  cursor: pointer;
+  margin-bottom: -1px;
+}
+
+.nav-btn:hover {
+  color: #2a2018;
+}
+
+.nav-btn.active {
+  color: #2a2018;
+  border-bottom-color: #2a2018;
+}
+
+/* secciones */
+.section {
+  display: none;
+  padding-bottom: 2rem;
+}
+
+.section.visible {
+  display: block;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-bottom: 1rem;
+}
+
+/* bio */
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #c8b89a;
+  border: 1px solid #c8b89a;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.bio-cell {
+  background: #ede5d5;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cell-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a08060;
+}
+
+.cell-value {
+  font-size: 14px;
+  color: #2a2018;
+}
+
+.bio-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #5a4832;
+  background: #e5dcc8;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #c8b89a;
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  border-left: 2px solid #a08060;
+  padding: 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+  font-family: 'Special Elite', serif;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #2a2018;
+}
+
+cite {
+  display: block;
+  font-size: 11px;
+  color: #a08060;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-family: 'DM Mono', monospace;
+}
+
+/* discografia */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.album-card {
+  border: 1px solid #c8b89a;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ede5d5;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.album-card:hover {
+  transform: translateY(-2px);
+  border-color: #8a7055;
+}
+
+.album-art-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #c8b89a;
+}
+
+.album-info {
+  padding: 0.65rem 0.75rem;
+}
+
+.album-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #2a2018;
+}
+
+.album-year {
+  font-size: 11px;
+  color: #a08060;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+/* trivia */
+.facts-list {
+  list-style: none;
+  border: 1px solid #c8b89a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.facts-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid #d8c8a8;
+  font-size: 13px;
+  line-height: 1.6;
+  background: #ede5d5;
+  color: #3a2e1e;
+}
+
+.facts-list li:last-child {
+  border-bottom: none;
+}
+
+.num {
+  font-size: 10px;
+  color: #a08060;
+  padding-top: 3px;
+  min-width: 18px;
+  font-style: italic;
+}
+
+/* reproductor al fondo */
+.player-wrapper {
+  background: #2a2018;
+  width: calc(100% + 2rem);
+  margin-top: auto;
+  margin-left: -1rem;
+  padding: 1.5rem;
+}
+
+.player {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f0ebe0;
+}
+
+.player-label {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8a7a5a;
+  margin-bottom: 0.75rem;
+}
+
+.player-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.player-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f0e8d0;
+}
+
+.player-artist {
+  font-size: 11px;
+  color: #8a7a5a;
+  font-style: italic;
+}
+
+.player-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.player-controls button {
+  background: #3a3028;
+  border: 1px solid #5a5040;
+  color: #f0e8d0;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.player-controls button:hover {
+  background: #4a4038;
+}
+
+.player-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 11px;
+  color: #8a7a5a;
+}
+
+.player-progress input[type="range"] {
+  flex: 1;
+  accent-color: #c8a060;
+  cursor: pointer;
+}
+
+.playlist {
+  list-style: none;
+  margin-top: 1rem;
+  border-top: 1px solid #3a3028;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.playlist li {
+  font-size: 12px;
+  color: #8a7a5a;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.playlist li:hover {
+  background: #3a3028;
+  color: #f0e8d0;
+}
+
+.playlist li.active {
+  color: #c8a060;
+}
