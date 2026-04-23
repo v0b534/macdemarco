@@ -2,23 +2,23 @@
 const songs = [
   {
     title: "Chamber of Reflection",
-    src: "music/Chamber Of Reflection.mp3"
+    src: "Chamber Of Reflection.mp3"
   },
   {
     title: "Salad Days",
-    src: "music/Salad Days.mp3"
+    src: "Salad Days.mp3"
   },
   {
     title: "My Kind of Woman",
-    src: "music/My Kind of Woman.mp3"
+    src: "y Kind of Woman.mp3"
   },
   {
     title: "Ode to Viceroy",
-    src: "music/Ode to Viceroy.mp3"
+    src: "Ode to Viceroy.mp3"
   },
   {
     title: "20190724",
-    src: "music/20190724.mp3"
+    src: "20190724.mp3"
   }
 ];
 
